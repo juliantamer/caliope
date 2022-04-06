@@ -1,0 +1,61 @@
+body{
+    top: 10px;
+    margin: 10px;
+    padding: 10px;
+    background-color: #ffeb90;
+    border: 2px solid #000;
+}
+header{
+height: 7cm;
+background-image: url(https://imag.bonviveur.com/pasta-fresca.webp);
+background-size: cover;
+background-repeat: no-repeat;
+}
+.logo { 
+    height: 5cm;
+    width: 5cm;
+    position: relative;
+    left: 600px;
+    top: 80px;
+}
+a{
+    outline: none;
+    text-decoration: none;
+    font-size: 1,5px;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    
+}
+.navegador li{
+    display: inline-block;
+    position:relative;
+    left: 40px;
+    width: 150px; 
+    height: 10px; 
+    margin: 10px;
+    padding: 10px;
+    border: 1px inset #000 
+}
+h2{
+    text-align: center;
+}
+.bolsa{
+    max-width: 430px;
+    border: 2px solid #000;
+    position: relative;
+    left: 400px;
+}
+.imgBolsa{
+    margin: 5px;
+    padding: 5px;
+    border: 1px dashed #000;
+    position: relative;
+    left: 35px;
+    width: 250px;
+    height: 250px;
+}
+.lista{
+    max-width: 150px;
+    position: relative;
+    left: 35px;
+}
