@@ -1,62 +1,278 @@
+@media screen and (max-width: 767px) {
+    body{
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-column-gap: 5px;
+        grid-template-areas: 
+        "header"
+        "navegador"
+        "main"
+        "footer";
+        background-color: #7c92ff
+    }
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background-image: url(https://imag.bonviveur.com/pasta-fresca.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 7cm;
+        grid-area: header;
+    }
+    .logo{
+        height: 5cm;
+        width: 5cm;
+    }
+    .contenedorNav{
+        display: flex;
+        flex-direction: column;
+        justify-content:space-around;
+        background-color:#7c92ff;
+        border: 1px groove #000;
+    }
+    .navegador li {
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            height: 50px;
+            margin: 5px;
+            padding: 10px;
+    }
+    a{
+        outline: none;
+        text-decoration:none;
+        font-family: Verdana;
+        font-style: normal;
+        color: #000;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
+        grid-area: main;
+    }
+    .intro {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:top;
+    }
+    .caja{
+        border: #000 1px;
+        margin: 10px;
+        padding: 10px;
+    }
+    .titulo{
+    font-family: Verdana;
+    font-style: normal;
+    text-align: center;
+    }
+    .presenta{
+        font-family: Verdana;
+        font-style:normal;
+        text-align: center;
+    }
+    .estandar{
+        font-family: Verdana;
+        font-style:normal;
+        text-align: center;
+    }
+    .brownie{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+        .RecetaSt{
+            display: flex;
+            flex-direction: column;
+        justify-content: center;
+        }
+}
+@media screen and (min-width: 768px) {
+    body{
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-column-gap: 5px;
+        grid-template-areas: 
+        "header"
+        "navegador"
+        "main"
+        "footer";
+        background-color: #7c92ff
+    }
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background-image: url(https://imag.bonviveur.com/pasta-fresca.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 7cm;
+        grid-area: header;
+    }
+    .logo{
+        height: 5cm;
+        width: 5cm;
+    }
+    .contenedorNav{
+        display: flex;
+        flex-direction: row;
+        justify-content:space-around;
+        background-color:#7c92ff;
+        height:50px;
+        border: 1px groove #000;
+    }
+    .navegador li {
+            display: inline-block;
+            align-items: center;
+            height: 10px; 
+            margin: 5px;
+            padding: 10px;
+    }
+    a{
+        outline: none;
+        text-decoration:none;
+        font-family: Verdana;
+        font-style: normal;
+        color: #000;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
+        grid-area: main;
+    }
+    .intro {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:top;
+    }
+    .caja{
+        border: #000 1px;
+        margin: 10px;
+        padding: 10px;
+    }
+    .titulo{
+    font-family: Verdana;
+    font-style: normal;
+    text-align: center;
+    }
+    .presenta{
+        font-family: Verdana;
+        font-style:normal;
+        text-align: center;
+    }
+    .estandar{
+        font-family: Verdana;
+        font-style:normal;
+        text-align: center;
+    }
+    .brownie{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+        .RecetaSt{
+            position: relative;
+            left: 120px;
+    }
+    }   
+@media screen and (min-width: 1024px) {
 body{
-    top: 10px;
-    margin: 10px;
-    padding: 10px;
-    background-color: #ffeb90;
-    border: 2px solid #000;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-column-gap: 5px;
+    grid-template-areas: 
+    "header"
+    "navegador"
+    "main"
+    "footer";
+    background-color: #7c92ff
 }
 header{
-height: 7cm;
-background-image: url(https://imag.bonviveur.com/pasta-fresca.webp);
-background-size: cover;
-background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-image: url(https://imag.bonviveur.com/pasta-fresca.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 7cm;
+    grid-area: header;
 }
-.logo { 
+.logo{
     height: 5cm;
     width: 5cm;
-    position: relative;
-    left: 600px;
-    top: 80px;
+}
+.contenedorNav{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    background-color:#7c92ff;
+    height:50px;
+    border: 1px groove #000;
+}
+.navegador li {
+        display: inline-block;
+        align-items: center;
+        height: 10px; 
+        margin: 5px;
+        padding: 10px;
 }
 a{
     outline: none;
-    text-decoration: none;
-    font-size: 1,5px;
-    font-family: 'Times New Roman', Times, serif;
-    color: black;
-    
+    text-decoration:none;
+    font-family: Verdana;
+    font-style: normal;
+    color: #000;
 }
-.navegador li{
-    display: inline-block;
-    position:relative;
-    left: 40px;
-    width: 150px; 
-    height: 10px; 
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    grid-area: main;
+}
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:top;
+}
+.caja{
+    border: #000 1px;
     margin: 10px;
     padding: 10px;
-    border: 1px inset #000 
 }
-.intro{
-    position:relative;
-    left:400px;
+.titulo{
+font-family: Verdana;
+font-style: normal;
+text-align: center;
+}
+.presenta{
+    font-family: Verdana;
+    font-style:normal;
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-style: oblique;
-    max-width: 500px;
 }
 .estandar{
-    position: relative;
-    left:500px;
-    width: 500px;
+    font-family: Verdana;
+    font-style:normal;
+    text-align: center;
 }
-h2{
-    position: relative;
-    left: 110px;
+.brownie{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
 }
-table{
-    max-width: 300px;
-    border:1px solid #000;
+    .RecetaSt{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
-th{ 
-    text-align: justify;
-}
+}   
