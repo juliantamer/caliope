@@ -1,4 +1,4 @@
-    @media screen and (max-width: 767px) { 
+@media screen and (max-width: 767px) { 
     *{
         margin: 0px;
         padding: 0px;
@@ -30,22 +30,39 @@ header{
 .contenedorNav{
     display: flex;
     flex-direction: row;
-    image: url(https://imag.bonviveur.com/pasta-fresca.webp);
     background-color: #7c92ff;
+    height: 20px;
+    animation-name: agrandando;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+@keyframes agrandando{
+    0%{height: 10px;}
+    100%{height: 120px;}
 }
 .navegador li {
     display: flex;
     flex-direction:column;
     justify-content:start;
     grid-area: nav;
-    max-height: 126px; 
+}
+.inicio{
+    opacity: 1;
+    color: #000;
 }
 a{
     outline: none;
     text-decoration:none;
-    font-family: ve;
+    font-family: Verdana;
     font-style: italic;
     color: #000;
+    animation-name: letra;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+@keyframes letra{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
 }
 main{
     display: flex;
@@ -58,6 +75,10 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    height: 20px;
+    animation-name: agrandado;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
 }
 .caja{
     border: #000 1px;
@@ -65,15 +86,25 @@ main{
     margin: 10px;
     padding: 10px;
 }
+@keyframes agrandado{
+    0%{height: 30px;}
+    100%{height: 240px;}
+}
 .titulo{
-font-family:Verdana;
+font-family: Verdana;
 font-style: italic;
 text-align: center;
+animation-name: letra;
+animation-duration: 3s;
+animation-fill-mode: forwards;
 }
 .presenta{
-    font-family:Verdana
-    font-style:oblique;
+    font-family: Verdana;
+    font-style: oblique;
     text-align: center;
+    animation-name: letra;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
 }
 iframe{
     margin: 10px;
@@ -128,19 +159,37 @@ header{
     background-image: url(https://imag.bonviveur.com/pasta-fresca.webp);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 7cm;
+    height: 1cm;
     grid-area: header;
+    animation-name: header;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes header {
+    from{
+        height: 1cm;
+    }
+    to {
+        height:7cm;
+    }
 }
 .logo{
     height: 5cm;
     width: 5cm;
+    animation-name: logo;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+@keyframes logo {
+    0%{ opacity:0 ;}
+    100%{ opacity:1 ;}
 }
 .contenedorNav{
     display: flex;
     flex-direction: row;
     justify-content:space-around;
     background-color:#7c92ff;
-    height:50px;
+    height: 50px;
 }
 .navegador li {
         display: inline-block;
@@ -149,18 +198,19 @@ header{
         margin: 5px;
         padding: 10px;
 }
-.caliope{
-    position: relative;
-    left: 100px;
-    height: 300px;
-    width: 400px;
-}
 a{
     outline: none;
     text-decoration:none;
     font-family: Verdana;
     font-style: italic;
     color: #000;
+    animation-name: links;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes links {
+    0%{ opacity:0 ;}
+    100%{ opacity:1 ;}
 }
 main{
     display: flex;
@@ -168,6 +218,9 @@ main{
     justify-content: center;
     align-items: center; 
     grid-area: main;
+    animation-name: links;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
 }
 .sobreCali {
     display: flex;
@@ -189,7 +242,7 @@ text-align: center;
     font-family: Verdana;
     font-style:oblique;
     text-align: center;
-}
+    }
 .videoYoutube{
     display: flex;
     flex-direction: row;
@@ -251,10 +304,20 @@ header{
     background-size: cover;
     height: 7cm;
     grid-area: header;
+    animation-name: inicio;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;    
+}
+@keyframes inicio {
+    0%{opacity:0 ;}
+    100%{opacity:1 ;}
 }
 .logo{
     height: 5cm;
     width: 5cm;
+    animation-name: inicio;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;   
 }
 .contenedorNav{
     display: flex;
@@ -262,6 +325,9 @@ header{
     justify-content:space-around;
     background-color:#7c92ff;
     height:50px;
+    animation-name: inicio;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;   
 }
 .navegador li {
         display: inline-block;
@@ -289,6 +355,9 @@ main{
     justify-content: center;
     align-items: center; 
     grid-area: main;
+    animation-name: inicio;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;   
 }
 .sobreCali {
     display: flex;
@@ -305,12 +374,20 @@ main{
 font-family: Verdana;
 font-style: italic;
 text-align: center;
+opacity: 1;
 }
+
 .presenta{
     font-family: Verdana;
     font-style:oblique;
     text-align: center;
+    opacity: 0;
+    transition: opacity 0.5s;
 }
+.presenta:hover{
+    opacity: 1;
+}
+
 .videoYoutube{
     display: flex;
     flex-direction: row;
@@ -326,6 +403,9 @@ iframe{
 .form{
     display: flex;
     flex-direction: row;
+    animation-name: inicio;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;   
 }
 .contenedorForm{
     display: flex;
@@ -347,4 +427,3 @@ iframe{
     justify-content: start;
 }   
 }
-   
