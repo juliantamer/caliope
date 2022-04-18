@@ -4,13 +4,6 @@
         padding: 0px;
     }
     body{
-    display: grid;
-    grid-template-columns: 1fr ;
-    grid-template-areas: 
-    "header"
-    "navegador"
-    "main"
-    "footer";
     background-color: #7c92ff ;
 }
 header{
@@ -21,7 +14,6 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
     border-style:2px  solid color #7c89ff;
-    grid-area: header;
 }
 .logo{
     height: 2.5cm;
@@ -30,15 +22,14 @@ header{
 .contenedorNav{
     display: flex;
     flex-direction: row;
+    justify-content: center;
     background-color: #7c92ff;
 }
 .navegador li {
     background-color: #7c92ff;
     display: flex;
     flex-direction:column;
-    justify-content:start;
-    grid-area: nav;
-    max-height: 126px; 
+    justify-content:start; 
 }
 a{
     background-color: #7c92ff;
@@ -46,18 +37,24 @@ a{
     text-decoration:none;
     font-family: Verdana;
     color: #000;
+    animation-name: letra;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes letra{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
 }
 main{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; 
-    grid-area: main;
 }
 .sobreCali{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content:space-between;
 }
 .caja{
     border: #000 1px;
@@ -66,19 +63,28 @@ main{
     padding: 10px;
 }
 .titulo{
-font-family:Verdana;
+font-family: Verdana;
 font-style: italic;
 text-align: center;
+animation-name: letra;
+animation-duration: 3s;
+animation-fill-mode: forwards;
 }
 .presenta{
-    font-family:Verdana;
-    font-style:normal;
-    text-align: center;
+font-family: Verdana;
+font-style: oblique;
+text-align: center;
+animation-name: letra;
+animation-duration: 3s;
+animation-fill-mode: forwards;
 }
 iframe{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     margin: 10px;
     padding: 10px;
-    max-width: 340px;
+    max-width: 300px;
     max-height: 200px;
 }
 .form{
@@ -91,13 +97,9 @@ iframe{
     justify-content: start;
 }
 .formContent{
-    max-width:100px ;
+    max-width:50px ;
     position: relative;
-    left:60px;
-}
-.Registro{
-    height: 2.5cm;
-    width: 2.5cm;
+    left: 80px;
 }
 .itemsRadio{
     display: flex;
@@ -111,14 +113,6 @@ iframe{
         padding: 0px;
     }
     body{
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-column-gap: 5px;
-    grid-template-areas: 
-    "header"
-    "navegador"
-    "main"
-    "footer";
     background-color: #7c92ff ;
 }
 header{
@@ -129,7 +123,6 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
     height: 7cm;
-    grid-area: header;
 }
 .logo{
     height: 5cm;
@@ -138,29 +131,37 @@ header{
 .contenedorNav{
     display: flex;
     flex-direction: row;
-    justify-content:space-around;
-    background-color:#7c92ff;
-    height:50px;
+    justify-content: center;
+    background-color: #7c92ff;
 }
 .navegador li {
-        display: inline-block;
-        align-items: center;
-        height: 10px; 
-        margin: 5px;
-        padding: 10px;
+    background-color: #7c92ff;
+    display: flex;
+    flex-direction:column;
+    justify-content:start;
+    max-height: 126px; 
+    animation-name: agrandando;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
 }
-.caliope{
-    position: relative;
-    left: 100px;
-    height: 300px;
-    width: 400px;
+@keyframes agrandando{
+    0%{height: 0px;}
+    100%{height: 20px;}
 }
+
 a{
+    background-color: #7c92ff;
     outline: none;
     text-decoration:none;
     font-family: Verdana;
-    font-style: italic;
     color: #000;
+    animation-name: letra;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes letra{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
 }
 main{
     display: flex;
@@ -169,26 +170,36 @@ main{
     align-items: center; 
     grid-area: main;
 }
-.sobreCali {
+.sobreCali{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items:top;
+    justify-content:space-between;
 }
 .caja{
     border: #000 1px;
+    border-style: oblique;
     margin: 10px;
     padding: 10px;
+}
+@keyframes agrandado{
+    0%{height: 30px;}
+    100%{height: 240px;}
 }
 .titulo{
 font-family: Verdana;
 font-style: italic;
 text-align: center;
+animation-name: letra;
+animation-duration: 3s;
+animation-fill-mode: forwards;
 }
 .presenta{
-    font-family: Verdana;
-    font-style:oblique;
-    text-align: center;
+font-family: Verdana;
+font-style: oblique;
+text-align: center;
+animation-name: letra;
+animation-duration: 3s;
+animation-fill-mode: forwards;
 }
 .videoYoutube{
     display: flex;
@@ -232,14 +243,6 @@ iframe{
         padding: 0px;
     }
     body{
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-column-gap: 5px;
-    grid-template-areas: 
-    "header"
-    "navegador"
-    "main"
-    "footer";
     background-color: #7c92ff
 }
 header{
@@ -250,7 +253,6 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
     height: 7cm;
-    grid-area: header;
 }
 .logo{
     height: 5cm;
@@ -259,24 +261,29 @@ header{
 .contenedorNav{
     display: flex;
     flex-direction: row;
-    justify-content:space-around;
-    background-color:#7c92ff;
-    height:50px;
-    border: 1px groove #000;
+    justify-content: center;
+    background-color: #7c92ff;
 }
 .navegador li {
-        display: inline-block;
-        align-items: center;
-        height: 10px; 
-        margin: 5px;
-        padding: 10px;
+    background-color: #7c92ff;
+    display: flex;
+    flex-direction:column;
+    justify-content:start;
+    max-height: 126px; 
 }
 a{
+    background-color: #7c92ff;
     outline: none;
     text-decoration:none;
     font-family: Verdana;
-    font-style: normal;
     color: #000;
+    animation-name: letra;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes letra{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
 }
 main{
     display: flex;
@@ -285,26 +292,36 @@ main{
     align-items: center; 
     grid-area: main;
 }
-.sobreCali {
+.sobreCali{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items:top;
+    justify-content:space-between;
 }
 .caja{
     border: #000 1px;
+    border-style: oblique;
     margin: 10px;
     padding: 10px;
 }
+@keyframes agrandado{
+    0%{height: 30px;}
+    100%{height: 240px;}
+}
 .titulo{
 font-family: Verdana;
-font-style: normal;
+font-style: italic;
 text-align: center;
+animation-name: letra;
+animation-duration: 3s;
+animation-fill-mode: forwards;
 }
 .presenta{
-    font-family: Verdana;
-    font-style:normal;
-    text-align: center;
+font-family: Verdana;
+font-style: oblique;
+text-align: center;
+animation-name: letra;
+animation-duration: 3s;
+animation-fill-mode: forwards;
 }
 .videoYoutube{
     display: flex;

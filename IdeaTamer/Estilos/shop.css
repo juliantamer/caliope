@@ -1,40 +1,49 @@
-body{
-    top: 10px;
-    margin: 10px;
-    padding: 10px;
-    background-color: #ffeb90;
-    border: 2px solid #000;
+
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    background-color: #7c92ff
 }
 header{
-height: 7cm;
-background-image: url(https://imag.bonviveur.com/pasta-fresca.webp);
-background-size: cover;
-background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-image: url(https://imag.bonviveur.com/pasta-fresca.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 7cm;
 }
-.logo { 
+.logo{
     height: 5cm;
     width: 5cm;
-    position: relative;
-    left: 600px;
-    top: 80px;
+}
+.contenedorNav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #7c92ff;
+}
+.navegador li {
+    background-color: #7c92ff;
+    display: flex;
+    flex-direction:column;
+    justify-content:start;
+    max-height: 126px; 
 }
 a{
+    background-color: #7c92ff;
     outline: none;
-    text-decoration: none;
-    font-size: 1,5px;
-    font-family: 'Times New Roman', Times, serif;
-    color: black;
-    
-}
-.navegador li{
-    display: inline-block;
-    position:relative;
-    left: 40px;
-    width: 150px; 
-    height: 10px; 
-    margin: 10px;
-    padding: 10px;
-    border: 1px inset #000 
+    text-decoration:none;
+    font-family: Verdana;
+    color: #000;
+    animation-name: letra;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
 }
 section{
     width: 965px;/* para que se ajuste */

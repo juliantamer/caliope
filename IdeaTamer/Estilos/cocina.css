@@ -1,13 +1,5 @@
 @media screen and (max-width: 767px) {
     body{
-        display: grid;
-        grid-template-rows: 1fr;
-        grid-column-gap: 5px;
-        grid-template-areas: 
-        "header"
-        "navegador"
-        "main"
-        "footer";
         background-color: #7c92ff
     }
     header{
@@ -17,8 +9,6 @@
         background-image: url(https://imag.bonviveur.com/pasta-fresca.webp);
         background-repeat: no-repeat;
         background-size: cover;
-        height: 7cm;
-        grid-area: header;
     }
     .logo{
         height: 5cm;
@@ -29,16 +19,10 @@
         flex-direction: column;
         justify-content:space-around;
         background-color:#7c92ff;
-        border: 1px groove #000;
-    }
-    .navegador li {
-            display: flex;
-            flex-direction: column;
-            justify-content: start;
-            height: 50px;
-            margin: 5px;
-            padding: 10px;
-    }
+        margin: 20px;
+        padding: 10px;
+        min-height: 100px;
+        min-width: 100px;    }
     a{
         outline: none;
         text-decoration:none;
@@ -47,22 +31,18 @@
         color: #000;
     }
     main{
+        margin-top: 10px;
+        padding-top: 10px;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center; 
-        grid-area: main;
+        align-items:bottom; 
     }
     .intro {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: center;
         align-items:top;
-    }
-    .caja{
-        border: #000 1px;
-        margin: 10px;
-        padding: 10px;
     }
     .titulo{
     font-family: Verdana;
@@ -93,14 +73,6 @@
 }
 @media screen and (min-width: 768px) {
     body{
-        display: grid;
-        grid-template-rows: 1fr;
-        grid-column-gap: 5px;
-        grid-template-areas: 
-        "header"
-        "navegador"
-        "main"
-        "footer";
         background-color: #7c92ff
     }
     header{
@@ -111,7 +83,6 @@
         background-repeat: no-repeat;
         background-size: cover;
         height: 7cm;
-        grid-area: header;
     }
     .logo{
         height: 5cm;
@@ -144,7 +115,6 @@
         flex-direction: column;
         justify-content: center;
         align-items: center; 
-        grid-area: main;
     }
     .intro {
         display: flex;
@@ -185,14 +155,6 @@
     }   
 @media screen and (min-width: 1024px) {
 body{
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-column-gap: 5px;
-    grid-template-areas: 
-    "header"
-    "navegador"
-    "main"
-    "footer";
     background-color: #7c92ff
 }
 header{
@@ -203,7 +165,6 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
     height: 7cm;
-    grid-area: header;
 }
 .logo{
     height: 5cm;
@@ -236,7 +197,6 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center; 
-    grid-area: main;
 }
 .intro {
     display: flex;
@@ -273,6 +233,6 @@ align-items: center;
     .RecetaSt{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
 }
 }   
